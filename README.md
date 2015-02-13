@@ -1,5 +1,7 @@
 ![QRCodeReaderViewController](https://github.com/YannickL/QRCodeReaderViewController/blob/master/web/qrcodereaderviewcontroller_header.png)
 
+This fork is just inteded to add an alert view asking user permission to use the camera on iOS 7 and 8 if he already refused it.
+
 The _QRCodeReaderViewController_ is a simple QRCode Reader/Scanner based on the _AVFoundation_ framework from Apple. It aims to replace ZXing or ZBar for iOS 7 and over.
 
 It also allows you to switch between the front and the back cameras.
