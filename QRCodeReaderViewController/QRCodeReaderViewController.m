@@ -186,13 +186,14 @@
         [_switchCameraButton addTarget:self action:@selector(switchCameraAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_switchCameraButton];
     }
-    
+    if (cancelButtonTitle) {
     self.cancelButton                                       = [[UIButton alloc] init];
     _cancelButton.translatesAutoresizingMaskIntoConstraints = NO;
     [_cancelButton setTitle:cancelButtonTitle forState:UIControlStateNormal];
     [_cancelButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
     [_cancelButton addTarget:self action:@selector(cancelAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_cancelButton];
+    }
 }
 
 - (void)setupAutoLayoutConstraints
